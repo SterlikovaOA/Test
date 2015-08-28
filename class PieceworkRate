@@ -1,0 +1,29 @@
+package randomex;
+
+public class PieceworkRate {
+    protected String doljnost;
+     protected String objazanost;
+     protected String doljnost1;
+     protected String objazanost1;
+     protected String doljnost2;
+     protected String objazanost2;
+    
+    PieceworkRate (String doljnost,String objazanost) {
+   
+   this.doljnost="programer";
+       this.objazanost="писать код";
+       
+       
+      this.doljnost1="tester";
+       this.objazanost1="тестировать код";
+       
+       
+       this.doljnost2="desiner";
+       this.objazanost2="рисовать макет";
+    }
+
+public String establishThePost(){
+        
+       return ("Список сотрудников, выполняющие сдельную работу:"+"\n"+"Должность-"+doljnost+", функциональные обязанности-"+objazanost+"\n"+"Должность-"+doljnost1+", функциональные обязанности-"+objazanost1+"\n"+"Должность-"+doljnost2+", функциональные обязанности-"+objazanost2);
+}
+}
