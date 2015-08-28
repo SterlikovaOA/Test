@@ -1,0 +1,42 @@
+package randomex;
+    
+/**
+ *
+ * @author Olga
+ */
+public class FixedRateWorkers {
+   
+    private String doljnost;
+     private int zarplata;
+    private String objazanost;
+    
+   private int zarplata1;
+    private String objazanost1;
+    private String doljnost1;
+    
+    private int zarplata2;
+    private String objazanost2;
+    private String doljnost2;
+    
+    public int obschjazp;
+    
+    public FixedRateWorkers(String doljnost,String objazanost,int zarplata){
+       this.doljnost="директор";
+       this.objazanost="распределять задания";
+       this.zarplata=10000;
+       
+      this.doljnost1="менеджер";
+       this.objazanost1="продает услуги";
+       this.zarplata1=7000;
+       
+       this.doljnost2="бухгалтер";
+       this.objazanost2="составляет отчет";
+       this.zarplata2=4000;
+       
+       obschjazp= zarplata+zarplata1+zarplata2;
+    }
+    public String establishThePost(){
+        
+       return ("Список сотрудников, работающих по фиксированной ставке:"+"\n"+"Должность-"+doljnost+", функциональные обязанности-"+objazanost+", зарплата="+zarplata+"\n"+"Должность-"+doljnost1+", функциональные обязанности-"+objazanost1+", зарплата="+zarplata1+"\n"+"Должность-"+doljnost2+", функциональные обязанности-"+objazanost2+", зарплата="+zarplata2+"\n"+"Общая зарплата управленцев="+obschjazp);
+     }
+     }
